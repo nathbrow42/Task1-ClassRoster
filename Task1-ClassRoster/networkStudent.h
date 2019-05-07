@@ -6,5 +6,6 @@ class networkStudent :
 public:
 	networkStudent();
 	~networkStudent();
+	Degree GetDegreeProgram();
 };
 
