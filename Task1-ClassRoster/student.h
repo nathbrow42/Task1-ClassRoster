@@ -3,11 +3,12 @@
 #include "degree.h"
 using namespace std;
 
-class student
+class Student
 {
 public:
-	student();
-	~student();
+	Student();
+	Student(string studentID, string firstName, string lastName, string email, int age, int* daysToCompleteCourse, Degree degree);
+	~Student();
 	string GetStudentID();
 	void SetStudentID(string studentID);
 	string GetFirstName();
@@ -20,10 +21,9 @@ public:
 	void SetAge(int age);
 	int GetDaysToCompleteCourses();
 	void SetDateToCompleteCourses(int& daysToCompleteCourses);
-	Degree GetDegreeType();
-	void SetDegreeType(Degree degreeType);
 	virtual void print();
 	virtual Degree GetDegreeProgram();
+
 private:
 	string studentID;
 	string firstName;
@@ -31,6 +31,5 @@ private:
 	string email;
 	int age;
 	int* daysToCompleteCourses;
-	Degree degreeType;
 };
 

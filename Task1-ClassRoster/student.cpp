@@ -2,93 +2,90 @@
 
 
 
-student::Student() {
-
+Student::Student() {
+	studentID = "none";
+	firstName = "none";
+	lastName = "none";
+	email = "none";
+	age = 0;
+	daysToCompleteCourses[3] = ;
 }
 
-student::Student(string studentID, string firstName, string lastName, string email, int age, int* daysToCompleteCourse, Degree degree)
+Student::Student(string studentID, string firstName, string lastName, string email, int age, int* daysToCompleteCourse, Degree degree)
 {
 }
 
-student::~Student()
+Student::~Student()
 {
 }
 
-string student::GetStudentID()
+string Student::GetStudentID()
 {
 	return studentID;
 }
 
-void student::SetStudentID(string studentID)
+void Student::SetStudentID(string studentID)
 {
 	studentID = studentID;
 }
 
-string student::GetFirstName()
+string Student::GetFirstName()
 {
 	return firstName;
 }
 
-void student::SetFirstName(string firstName)
+void Student::SetFirstName(string firstName)
 {
 	firstName = firstName;
 }
 
-string student::GetLastName()
+string Student::GetLastName()
 {
 	return lastName;
 }
 
-void student::SetLastName(string lastName)
+void Student::SetLastName(string lastName)
 {
 	lastName = lastName;
 }
 
-string student::GetEmail()
+string Student::GetEmail()
 {
 	return email;
 }
 
-void student::SetEmail(string email)
+void Student::SetEmail(string email)
 {
 	email = email;
 }
 
-int student::GetAge()
+int Student::GetAge()
 {
 	return age;
 }
 
-void student::SetAge(int age)
+void Student::SetAge(int age)
 {
 	age = age;
 }
 
-int student::GetDaysToCompleteCourses()
+int Student::GetDaysToCompleteCourses()
 {
-	return &daysToCompleteCourses;
+	return *daysToCompleteCourses;
 }
 
-void student::SetDateToCompleteCourses(int daysToCompleteCourses)
+void Student::SetDateToCompleteCourses(int& daysToCompleteCourses)
 {
-	&daysToCompleteCourses = daysToCompleteCourses;
+	daysToCompleteCourses = daysToCompleteCourses;
 }
 
-Degree student::GetDegreeType()
-{
-	return degreeType;
-}
 
-void student::SetDegreeType(Degree degreeType)
-{
-	degreeType = degreeType;
-}
 
-void student::print()
+void Student::print()
 {
 }
 
-Degree student::GetDegreeProgram()
+Degree Student::GetDegreeProgram()
 {
 	return Degree();
 }

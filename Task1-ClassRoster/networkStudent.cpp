@@ -4,6 +4,7 @@
 
 networkStudent::networkStudent()
 {
+	degreeProgram = NETWORKING;
 }
 
 

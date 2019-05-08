@@ -1,10 +1,13 @@
 #pragma once
 #include "student.h"
 class securityStudent :
-	public student
+	public Student
 {
 public:
 	securityStudent();
 	~securityStudent();
+	Degree getDegreeProgram();
+private:
+	Degree degreeProgram;
 };
 

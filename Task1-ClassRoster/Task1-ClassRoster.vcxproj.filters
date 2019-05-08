@@ -30,9 +30,6 @@
     <ClInclude Include="roster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="degree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -53,10 +50,5 @@
     <ClCompile Include="roster.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Task1-ClassRoster.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>
