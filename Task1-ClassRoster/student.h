@@ -7,7 +7,7 @@ class Student
 {
 public:
 	Student();
-	Student(string studentID, string firstName, string lastName, string email, int age, int* daysToCompleteCourse, Degree degree);
+	Student(string studentID, string firstName, string lastName, string email, int age, int daysCourse1, int daysCourse2, int daysCourse3);
 	~Student();
 	string GetStudentID();
 	void SetStudentID(string studentID);
@@ -19,8 +19,8 @@ public:
 	void SetEmail(string email);
 	int GetAge();
 	void SetAge(int age);
-	int GetDaysToCompleteCourses();
-	void SetDateToCompleteCourses(int& daysToCompleteCourses);
+	int *GetDaysToCompleteCourses();
+	void SetDateToCompleteCourses(int courseDays1, int courseDays2, int courseDays3);
 	virtual void print();
 	virtual Degree GetDegreeProgram();
 
@@ -30,6 +30,6 @@ private:
 	string lastName;
 	string email;
 	int age;
-	int* daysToCompleteCourses;
+	int daysToCompleteCourses[3];
 };
 

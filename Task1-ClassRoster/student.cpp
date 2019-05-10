@@ -8,11 +8,21 @@ Student::Student() {
 	lastName = "none";
 	email = "none";
 	age = 0;
-	daysToCompleteCourses[3] = ;
+	daysToCompleteCourses[0] = 0;
+	daysToCompleteCourses[1] = 0;
+	daysToCompleteCourses[2] = 0;
 }
 
-Student::Student(string studentID, string firstName, string lastName, string email, int age, int* daysToCompleteCourse, Degree degree)
+Student::Student(string studentID, string firstName, string lastName, string email, int studentAge, int daysCourse1, int daysCourse2, int daysCourse3)
 {
+	studentID = studentID;
+	firstName = firstName;
+	lastName = lastName;
+	email = email;
+	age = studentAge;
+	daysToCompleteCourses[0] = daysCourse1;
+	daysToCompleteCourses[1] = daysCourse2;
+	daysToCompleteCourses[2] = daysCourse3;
 }
 
 Student::~Student()
@@ -69,14 +79,16 @@ void Student::SetAge(int age)
 	age = age;
 }
 
-int Student::GetDaysToCompleteCourses()
+int *Student::GetDaysToCompleteCourses()
 {
-	return *daysToCompleteCourses;
+	return daysToCompleteCourses;
 }
 
-void Student::SetDateToCompleteCourses(int& daysToCompleteCourses)
+void Student::SetDateToCompleteCourses(int courseDays1, int courseDays2, int courseDays3)
 {
-	daysToCompleteCourses = daysToCompleteCourses;
+	daysToCompleteCourses[0] = courseDays1;
+	daysToCompleteCourses[1] = courseDays2;
+	daysToCompleteCourses[2] = courseDays3;
 }
 
 

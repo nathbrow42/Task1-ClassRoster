@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
 #include "roster.h"
 using namespace std;
 
@@ -45,6 +49,7 @@ void roster::printByDegreeProgram(int degreeProgram)
 
 //functionality of the program
 void main() {
+	int i = 0;
 	const string studentData[] =
 	{ "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
 	"A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
@@ -57,6 +62,14 @@ void main() {
 	cout << "Programming language used: C++" << endl;
 	cout << "Student ID: 000927962" << endl;
 	cout << "Name: Nathalie Brown" << endl;
+
+	roster classRoster;
+
+	for (i = 0; i < 5; ++i) {
+		
+	}
+
+	
 
 	return;
 }
