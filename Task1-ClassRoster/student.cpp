@@ -13,12 +13,12 @@ Student::Student() {
 	daysToCompleteCourses[2] = 0;
 }
 
-Student::Student(string studentID, string firstName, string lastName, string email, int studentAge, int daysCourse1, int daysCourse2, int daysCourse3)
+Student::Student(string studID, string firstN, string lastN, string emailAddress, int studentAge, int daysCourse1, int daysCourse2, int daysCourse3)
 {
-	studentID = studentID;
-	firstName = firstName;
-	lastName = lastName;
-	email = email;
+	studentID = studID;
+	firstName = firstN;
+	lastName = lastN;
+	email = emailAddress;
 	age = studentAge;
 	daysToCompleteCourses[0] = daysCourse1;
 	daysToCompleteCourses[1] = daysCourse2;

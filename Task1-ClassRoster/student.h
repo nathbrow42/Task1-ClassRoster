@@ -31,5 +31,6 @@ private:
 	string email;
 	int age;
 	int daysToCompleteCourses[3];
+
 };
 

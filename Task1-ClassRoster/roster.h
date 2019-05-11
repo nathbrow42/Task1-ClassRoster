@@ -15,6 +15,7 @@ public:
 	void printDaysInCourse(string studentID);
 	void printInvalidEmails();
 	void printByDegreeProgram(int degreeProgram);
+	int arrIndex = 0;
 };
 
 
